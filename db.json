@@ -13,12 +13,12 @@
     {
       "id": 3,
       "name": "Change Clothes",
-      "isComplete": false
+      "isComplete": true
     },
     {
+      "id": 4,
       "name": "Brush Teeth",
-      "isComplete": false,
-      "id": 4
+      "isComplete": true
     }
   ]
 }
