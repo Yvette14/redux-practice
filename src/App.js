@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TodoForm from "./components/TodoForm";
 
 const App = () =>
   (
@@ -11,6 +12,9 @@ const App = () =>
           This is for redux-practice
         </p>
       </header>
+      <div className='Todo-App'>
+        <TodoForm />
+      </div>
     </div>
   );
 
