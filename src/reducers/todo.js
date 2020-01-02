@@ -1,17 +1,15 @@
-import {TODO_ADD} from "../actions/todo";
+import {TODO_ADD, TODO_LOAD} from "../actions/todo";
 
 const initState = {
-	todos: [
-		{id: 1, name: 'todo1', isComplete: false},
-		{id: 2, name: 'todo2', isComplete: false},
-		{id: 3, name: 'todo3', isComplete: false},
-	]
+	todos: []
 };
 
-export default (state = initState, action) => {
-	switch (action.type) {
+export default (state = initState, {type, payload}) => {
+	switch (type) {
 		case TODO_ADD:
-			return {...state, todos: state.todos.concat(action.payload)};
+			return {...state, todos: state.todos.concat(payload)};
+		case TODO_LOAD:
+			return {...state, todos: payload};
 		default:
 			return state;
 	}
