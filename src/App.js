@@ -4,13 +4,7 @@ import './App.css';
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
-const todos = [
-  {id: 1, name: 'todo1', isComplete: false},
-  {id: 2, name: 'todo2', isComplete: false},
-  {id: 3, name: 'todo3', isComplete: false},
-];
-
-const App = () =>
+const App = ({todos}) =>
   (
     <div className="App">
       <header className="App-header">
@@ -20,7 +14,7 @@ const App = () =>
         </p>
       </header>
       <div className='Todo-App'>
-        <TodoForm />
+        <TodoForm/>
         <TodoList todos={todos}/>
       </div>
     </div>
