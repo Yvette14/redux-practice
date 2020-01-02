@@ -1,7 +1,7 @@
-import {getTodos} from '../services/todo';
+import {getTodos, saveTodo} from '../services/todo';
 
 export const TODO_ADD = 'TODO_ADD';
-export const addTodo = inputValue => ({type: TODO_ADD, payload: {name: inputValue, isComplete: false}});
+export const addTodo = todo => ({type: TODO_ADD, payload: todo});
 
 
 export const TODO_LOAD = 'TODO_LOAD';
@@ -12,5 +12,11 @@ export const fetchTodos = () => {
 		getTodos().then(todos => {
 			dispatch(loadTodoAction(todos));
 		})
+	}
+};
+
+export const createTodo = name => {
+	return (dispatch) => {
+		saveTodo(name).then(todo => dispatch(addTodo(todo)))
 	}
 };

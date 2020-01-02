@@ -1,7 +1,24 @@
 {
   "todos": [
-    {"id": 1, "name": "Stop Alarm", "isComplete": false},
-    {"id": 2, "name": "Get Up", "isComplete": false},
-    {"id": 3, "name": "Change Clothes", "isComplete": false}
+    {
+      "id": 1,
+      "name": "Stop Alarm",
+      "isComplete": false
+    },
+    {
+      "id": 2,
+      "name": "Get Up",
+      "isComplete": false
+    },
+    {
+      "id": 3,
+      "name": "Change Clothes",
+      "isComplete": false
+    },
+    {
+      "name": "Brush Teeth",
+      "isComplete": false,
+      "id": 4
+    }
   ]
 }
