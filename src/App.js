@@ -4,7 +4,7 @@ import './App.css';
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
-const App = ({todos}) =>
+const App = () =>
   (
     <div className="App">
       <header className="App-header">
@@ -14,8 +14,8 @@ const App = ({todos}) =>
         </p>
       </header>
       <div className='Todo-App'>
-        <TodoForm/>
-        <TodoList todos={todos}/>
+        <TodoForm />
+        <TodoList />
       </div>
     </div>
   );
