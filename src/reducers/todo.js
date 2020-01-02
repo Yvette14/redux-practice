@@ -1,3 +1,5 @@
+import {TODO_ADD} from "../actions/todo";
+
 const initState = {
 	todos: [
 		{id: 1, name: 'todo1', isComplete: false},
@@ -8,7 +10,7 @@ const initState = {
 
 export default (state = initState, action) => {
 	switch (action.type) {
-		case 'TODO_ADD':
+		case TODO_ADD:
 			return {...state, todos: state.todos.concat(action.payload)};
 		default:
 			return state;

@@ -10,7 +10,7 @@ const TodoItem = ({name, isComplete}) => (
 const TodoList = ({todos}) =>
 	(
 		<ul>
-			{todos.map(todo => <TodoItem key={todo.id} {...todo}/>)}
+			{todos.map((todo, index) => <TodoItem key={index} {...todo}/>)}
 		</ul>
 	);
 
